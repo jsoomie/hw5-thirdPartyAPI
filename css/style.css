@@ -24,6 +24,7 @@ body {
 
 #header {
     border-bottom: 10px solid var(--secondary-color);
+    margin-bottom: 2rem;
 }
 
 #header-head {
@@ -32,4 +33,17 @@ body {
 
 #header-subtext {
     font-size: 0.8rem;
+}
+
+.far {
+    color: var(--secondary-color);
+}
+
+.hour {
+    color: var(--secondary-color);
+    align-self: center;
+    border: 2px dotted var(--light-text);
+    border-left: none;
+    border-radius: 2px;
+    padding: 10px;
 }
