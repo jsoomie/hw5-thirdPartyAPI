@@ -1,0 +1,12 @@
+:root {
+    --bg-color: #333;
+    --primary-color: #fff;
+    --dark-text: #333;
+    --white-text: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
