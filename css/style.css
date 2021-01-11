@@ -22,6 +22,12 @@ body {
     background-color: var(--bg-color);
 }
 
+textarea {
+    resize: none;
+    color: black;
+    vertical-align: middle;
+}
+
 #header {
     border-bottom: 10px solid var(--secondary-color);
     margin-bottom: 2rem;
@@ -47,4 +53,18 @@ body {
     border-radius: 2px;
     padding: 10px;
     text-align: right;
+}
+
+@media (max-width: 767px) {
+    .hour-container {
+        margin-bottom: 20px;
+        border-bottom: 1px solid var(--light-text);
+        border-top: 1px solid var(--light-text);
+    }
+
+    .hour {
+        text-align: center;
+        border: 2px dotted var(--light-text);
+    }
+
 }
