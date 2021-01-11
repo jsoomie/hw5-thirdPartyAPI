@@ -1,16 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+
 :root {
-    --bg-color: #333;
-    --primary-color: #fff;
+    --bg-color: #222;
+
+    --primary-color: #333;
+    --secondary-color: #fff;
+
     --dark-text: #333;
-    --white-text: #fff;
+    --light-text: #ccc;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: var(--light-text);
+    font-family: 'Heebo', sans-serif;
 }
 
 body {
     background-color: var(--bg-color);
+}
+
+#header {
+    border-bottom: 10px solid var(--secondary-color);
+}
+
+#header-head {
+    font-size: 2rem;
+}
+
+#header-subtext {
+    font-size: 0.8rem;
 }
