@@ -55,6 +55,18 @@ textarea {
     text-align: right;
 }
 
+.current {
+    background-color: var(--secondary-color);
+}
+
+.past {
+    background-color: gray;
+}
+
+.future {
+    background-color: aquamarine;
+}
+
 @media (max-width: 767px) {
     .hour-container {
         margin-bottom: 20px;
