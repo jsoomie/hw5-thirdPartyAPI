@@ -11,24 +11,26 @@ $(document).ready(function() {
     function hourCheck() {       
         // check what the hour is to compare against
         let hourNow = moment().hours();
-        console.log(hourNow);
 
         $(".hour-container").each(function() {
-            let selectedHour = parseInt($(this).val());
+            let selectedHour = parseInt($(this).attr('value'));
+
             if (selectedHour < hourNow) {
-                $(".col-md-10").addClass("past");
+                $(this).children('textarea').addClass("past");
             } else if (selectedHour === hourNow) {
-                $(".col-md-10").removeClass("past");
-                $(".col-md-10").addClass("present");
+                $(this).children('textarea').removeClass("past");
+                $(this).children('textarea').addClass("current");
             } else {
-                $(".col-md-10").removeClass("past");
-                $(".col-md-10").removeClass("present");
-                $(".col-md-10").addClass("future");
+                $(this).children('textarea').removeClass("past");
+                $(this).children('textarea').removeClass("current");
+                $(this).children('textarea').addClass("future");
             }
+
+            console.log(selectedHour);
 
         })
 
-        console.log(parseInt($(".hour-container").attr('value')));
+        // console.log(parseInt($(".hour-container").attr('value')));
 
 
     }

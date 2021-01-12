@@ -20,12 +20,12 @@
 
 body {
     background-color: var(--bg-color);
+    margin-bottom: 100px;
 }
 
 textarea {
     resize: none;
     color: black;
-    vertical-align: middle;
 }
 
 #header {
