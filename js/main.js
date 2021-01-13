@@ -51,5 +51,11 @@ $(document).ready(function() {
     $('#four .text-area').val(localStorage.getItem('four'));
     $('#five .text-area').val(localStorage.getItem('five'));
 
+    // Clear all button
+    $('.clear-button').click(function() {
+        localStorage.clear();
+        $('.text-area').val("");
+    })
+
     hourCheck();
 })

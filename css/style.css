@@ -20,7 +20,7 @@
 
 body {
     background-color: var(--bg-color);
-    margin-bottom: 100px;
+    margin-bottom: 75px;
 }
 
 textarea {
@@ -65,6 +65,25 @@ textarea {
 
 .future {
     background-color: aquamarine;
+}
+
+.clear-button {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    color: var(--secondary-color);
+    background-color: red;
+    width: 100px;
+    height: 30px;
+    border: 1px solid red;
+    border-radius: 5px;
+
+    margin-top: 30px;
+}
+
+.clear-button:hover {
+    transform: scale(0.98);
 }
 
 @media (max-width: 767px) {
