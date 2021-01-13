@@ -44,7 +44,7 @@ $(document).ready(function() {
     $('#nine .text-area').val(localStorage.getItem('nine'));
     $('#ten .text-area').val(localStorage.getItem('ten'));
     $('#eleven .text-area').val(localStorage.getItem('eleven'));
-    $('#twleve .text-area').val(localStorage.getItem('twelve'));
+    $('#twelve .text-area').val(localStorage.getItem('twelve'));
     $('#one .text-area').val(localStorage.getItem('one'));
     $('#two .text-area').val(localStorage.getItem('two'));
     $('#three .text-area').val(localStorage.getItem('three'));
@@ -54,6 +54,7 @@ $(document).ready(function() {
     // Clear all button
     $('.clear-button').click(function() {
         let confirmation = confirm('Are you sure you want to delete and remove everything from your schedule?');
+
         if(confirmation === true) {
             localStorage.clear();
             $('.text-area').val("");

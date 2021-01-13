@@ -8,8 +8,6 @@
 
     --dark-text: #333;
     --light-text: #ccc;
-
-    --placeholder-text: #fff;
 }
 
 ::placeholder {
