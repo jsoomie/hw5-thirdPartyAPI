@@ -8,7 +8,22 @@
 
     --dark-text: #333;
     --light-text: #ccc;
+
+    --placeholder-text: #fff;
 }
+
+::placeholder {
+    color: var(--placeholder-text);
+    opacity: 1;
+  }
+  
+  :-ms-input-placeholder {
+    color: var(--placeholder-text);
+  }
+  
+  ::-ms-input-placeholder { 
+    color: var(--placeholder-text);
+  }
 
 * {
     margin: 0;
@@ -50,7 +65,6 @@ textarea {
     align-self: center;
     border: 2px dotted var(--light-text);
     border-left: none;
-    border-radius: 2px;
     padding: 10px;
     text-align: right;
 }
@@ -61,6 +75,7 @@ textarea {
 
 .past {
     background-color: gray;
+    color: white;
 }
 
 .future {
@@ -74,12 +89,16 @@ textarea {
     align-items: center;
     color: var(--secondary-color);
     background-color: red;
-    width: 100px;
-    height: 30px;
+    width: 130px;
+    height: 50px;
     border: 1px solid red;
     border-radius: 5px;
 
     margin-top: 30px;
+}
+
+.btn {
+    border-radius: 0 5px 5px 0;
 }
 
 .clear-button:hover {
@@ -88,14 +107,16 @@ textarea {
 
 @media (max-width: 767px) {
     .hour-container {
-        margin-bottom: 20px;
-        border-bottom: 1px solid var(--light-text);
-        border-top: 1px solid var(--light-text);
+        margin-bottom: 30px;
     }
 
     .hour {
         text-align: center;
         border: 2px dotted var(--light-text);
+        background-color: var(--bg-color);
     }
 
+    .btn {
+        border-radius: 0;
+    }
 }
