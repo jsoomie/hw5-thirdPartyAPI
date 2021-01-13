@@ -53,8 +53,14 @@ $(document).ready(function() {
 
     // Clear all button
     $('.clear-button').click(function() {
-        localStorage.clear();
-        $('.text-area').val("");
+        let confirmation = confirm('Are you sure you want to delete and remove everything from your schedule?');
+        if(confirmation === true) {
+            localStorage.clear();
+            $('.text-area').val("");
+        } else {
+            return;
+        }
+
     })
 
     hourCheck();
